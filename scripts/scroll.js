@@ -23,9 +23,6 @@ pc.forEach(pc =>{
     ono = 1;
   });
 });
-document.addEventListener('touchmove', (e) => {
-  document.trigger('mousewheel');
-});
 document.addEventListener('wheel', event =>{
   // faux scroll
   ono == 1 ? count.push(Math.floor(event.deltaY)) : null;
