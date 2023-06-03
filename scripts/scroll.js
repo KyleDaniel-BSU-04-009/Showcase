@@ -14,36 +14,37 @@ ref.forEach(s =>{
     cur[page].classList.add('current');
   });
 });
-var ono = 1;
-pc.forEach(pc =>{
-  pc.addEventListener('mouseover', event=>{
-    ono = 0;
-  });
-  pc.addEventListener('mouseleave', event=>{
-    ono = 1;
-  });
-});
-document.addEventListener('wheel', event =>{
+// var ono = 1;
+// pc.forEach(pc =>{
+  // pc.addEventListener('mouseover', event=>{
+    // ono = 0;
+  // });
+  // pc.addEventListener('mouseleave', event=>{
+    // ono = 1;
+  // });
+// });
+
+// document.addEventListener('wheel', event =>{
   // faux scroll
-  ono == 1 ? count.push(Math.floor(event.deltaY)) : null;
-  if(count.length >= 5){
-    let check = 0;
-    count.forEach(c =>{ check += c; });
-    count = [];
-    if(check > 0 && page < 3){
-      page++;
-    }
-    else if(check < 0 && page > 0){
-      page--;
-    }
-    switch(page){
-      case 0: document.querySelector('a[href="#home"]').click(); break;
-      case 1: document.querySelector('a[href="#cppPlanet"]').click(); break;
-      case 2: document.querySelector('a[href="#webdevPlanet"]').click(); break;
-      case 3: document.querySelector('a[href="#gamedevPlanet"]').click(); break;
-    }
-  }
-});
+  // ono == 1 ? count.push(Math.floor(event.deltaY)) : null;
+  // if(count.length >= 5){
+    // let check = 0;
+    // count.forEach(c =>{ check += c; });
+    // count = [];
+    // if(check > 0 && page < 3){
+      // page++;
+    // }
+    // else if(check < 0 && page > 0){
+      // page--;
+    // }
+    // switch(page){
+      // case 0: document.querySelector('a[href="#home"]').click(); break;
+      // case 1: document.querySelector('a[href="#cppPlanet"]').click(); break;
+      // case 2: document.querySelector('a[href="#webdevPlanet"]').click(); break;
+      // case 3: document.querySelector('a[href="#gamedevPlanet"]').click(); break;
+    // }
+  // }
+// });
 document.addEventListener('scroll', event =>{
   stars1.style.backgroundPosition = `0px ${-window.scrollY * 2}px`;
   stars2.style.backgroundPosition = `0px ${-window.scrollY / 2}px`;
