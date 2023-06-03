@@ -1,0 +1,35 @@
+:root{
+  --themeCol:hsl(240 20% 15%);
+  --textCol:hsl(240 100% 85%);
+}
+
+::-webkit-scrollbar{
+  display:none;
+}
+@font-face{
+  font-family:'Just-sans Regular';
+  src:url('../fonts/JUST Sans Regular.otf');
+}
+@font-face{
+  font-family:'Ageo Heavy';
+  src:url('../fonts/Ageo-Heavy.otf');
+}
+@font-face{
+  font-family:'Ageo Extra Bold';
+  src:url('../fonts/Ageo-ExtraBold.otf');
+}
+html{
+  scroll-behavior:smooth;
+}
+body{
+  margin:0px;
+  overflow:hidden;
+}
+.cssContent, .jsContent{
+  font-family:'Ageo Extra Bold';
+}
+.cssContent{ color:#0085ff; text-shadow:0px 0px 2px #0085ff; }
+.jsContent{ color:#fff700; text-shadow:0px 0px 2px #fff700; }
+.cppPlanet{ background-color:#004482; }
+.webdevPlanet{ background-color:#323330; }
+.gamedevPlanet{ background-color:#68217A; }
