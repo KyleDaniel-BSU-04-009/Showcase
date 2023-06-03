@@ -23,7 +23,8 @@ html{
 }
 body{
   margin:0px;
-  overflow:hidden;
+  overflow-x:hidden;
+  overflow-y:auto;
 }
 .cssContent, .jsContent{
   font-family:'Ageo Extra Bold';
