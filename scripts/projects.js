@@ -140,6 +140,8 @@ const projectsList = [
           "data": "about:blank",
         },
         "icons": [
+          "jquery",
+          "mysql",
           "php",
           "html",
           "css",
