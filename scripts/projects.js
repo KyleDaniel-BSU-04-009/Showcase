@@ -137,7 +137,7 @@ const projectsList = [
         "description": "This is an assignment where we were tasked to develop a social media clone. The clone must include several necessary social media features such as posts, comments, tags, likes, and images. The clone must allow the user to register, log in, log out, delete their account, and edit their profile.",
         "link": {
           "type": "website",
-          "data": "about:blank",
+          "data": "anitalk.infinityfreeapp.com",
         },
         "icons": [
           "jquery",
